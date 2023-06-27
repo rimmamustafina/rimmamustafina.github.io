@@ -1,0 +1,86 @@
+var InpoolAdIcon=function(o){var r={};function i(t){if(r[t])return r[t].exports;var e=r[t]={i:t,l:!1,exports:{}};return o[t].call(e.exports,e,e.exports,i),e.l=!0,e.exports}return i.m=o,i.c=r,i.d=function(t,e,o){i.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:o})},i.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(i.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)i.d(o,r,function(t){return e[t]}.bind(null,r));return o},i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,"a",e),e},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},i.p="/",i(i.s=0)}([function(t,e){var o=function(){let r={site:document.currentScript.getAttribute("site"),banner:document.currentScript.getAttribute("banner")||"0",owner:document.currentScript.getAttribute("owner")||"0",campaign:document.currentScript.getAttribute("campaign")||"0",delay:+document.currentScript.getAttribute("delay")||100,position:document.currentScript.getAttribute("position")||"tr",adFrom:{text:"Реклама от",color:"#bdbdbd"},reference:"https://inpool.ru",hoverWidth:"150px;",cssStyle:"top: 1px; right: 1px;",logo:{url:"//banners.adfox.ru/181129/adfox/699302/interpool_pict_banner_03.png",width:74}},t;var e=function(){try{t.remove(),o()}catch(t){}};function o(){t=document.createElement("div"),t.appendChild(function(){let t=document.createElement("div");return t.className="interpool_block",t.innerHTML=`
+                <a href="${r.reference}/?utm_source=inpool_ad_icon&utm_medium=2021&utm_campaign=${r.owner}&utm_content=${r.campaign}&utm_term=${r.banner}" target="_blank">
+                    <div class="interpool_logo"></div>
+                    <div class="interpool_text">${r.adFrom.text}</div>
+                </a>
+                <div class="help-div"></div>
+                <div class="help-div-over"></div>
+            `,t}()),t.appendChild(function(){let t,e;switch(r.position){case"tr":e="top: 1px; right:1px;",t="0 0 0 4px;";break;case"tl":e="top: 1px; left:1px;",t="0 0 4px 0;";break;case"br":e="bottom: 1px; right:1px;",t="4px 0 0 0;";break;case"bl":e="bottom: 1px; left:1px;",t="0 3px 0 0;";break;default:e="top: 1px; right:1px;",t="0 0 0 4px;"}let o=document.createElement("style");return o.innerHTML=`
+                .interpool_block {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: ${t};
+                    background-color: white;
+                    position: absolute;
+                    overflow: hidden;
+                    ${e};
+                    z-index: 10000;
+                    cursor: pointer;
+                    box-shadow: 0 0px 8px rgba(14,21,47,.05);
+                    -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);\
+                    transition:         all 600ms cubic-bezier(0.23, 1, 0.32, 1);\
+                
+                }
+
+                .interpool_block:hover {
+                    width: ${r.hoverWidth};
+                    box-shadow: 0 10px 20px rgba(14,21,47,.12), 0px 2px 10px rgba(14,21,47,.12), 0 -5px 20px rgba(14,21,47,.12);
+                }
+
+                .interpool_block:hover .interpool_logo {
+                    right: ${-(parseInt(r.hoverWidth)-r.logo.width)}px;
+                }
+                .interpool_block:hover .help-div {
+                    right: -5px;
+                }
+                .interpool_block:hover .interpool_text {
+                    left: 7px;
+                    opacity: 1;
+                }
+                .interpool_block:hover .help-div-over {
+                    width: 0px;
+                }
+
+                .interpool_logo {
+                    width: 74px;
+                    height: 22px;
+                    position: relative;
+                    top: 0px;
+                    right: 0px;
+                    display: block;
+                    background-image: url(${r.logo.url});
+                    -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+                    transition:         all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                .interpool_text {
+                    color: ${r.adFrom.color};
+                    font-family: Arial;
+                    font-size: 12px;
+                    position: absolute;
+                    opacity: 0;
+                    top: 0px;
+                    left: -40%;
+                    line-height: 22px;
+                    -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+                    transition:         all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                .help-div {
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    background-color: white;
+                    width: 5px;
+                    height: 22px;
+                    z-index: 10001;
+                    -webkit-transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+                    transition:         all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+                .help-div-over {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    transition-delay: 0.5s;
+                }
+            `,o}()),document.body.appendChild(t)}return"loading"==document.readyState?document.addEventListener("DOMContentLoaded",()=>{setTimeout(o,r.delay)}):setTimeout(o,r.delay),{setOptions:function(t){r="object"==typeof t?function t(e,o){for(var r in o)Object.prototype.hasOwnProperty.call(o,r)&&("object"==typeof e[r]?e[r]=t(e[r],o[r]):e[r]=o[r]);return e}(r,t):r,e()}}}();t.exports=o}]);
